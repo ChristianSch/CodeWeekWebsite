@@ -1,67 +1,214 @@
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title>OpenDataHackday</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+<head>
+  <meta charset="utf-8">
+  <title>OpenDataHackday</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
 
-  </head>
-  <body>
+</head>
+<body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+      <![endif]-->
 
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">OpenDataHackday</h3>
-      </div>
+      <header class="header scrollblock">
+        <div class="container" id="top">
+          <ul class="nav-bar">
+            <li class="active"><a href="#top">Anfang</a></li>
+            <li><a href="#themen">Themen</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li class="nav-highlight"><a href="#signup">Anmelden</a></li>
+          </ul>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      </div>
+          <div class="announcement" id="parallax-2">
+            <div class="title">
+              <h1 class="h1">#opendata Hackday</h1>
+              <h2 class="h2">Europe Code Week @ Gießen</h2>
+            </div>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+            <div class="row">
+              <ul class="btn-list">
+              <li><a href="#singup" class="btn btn-lg btn-outline btn-outline-white">Anmelden</a></li>
+                <li><a href="#schedule" class="btn btn-lg btn-outline btn-outline-white">Schedule</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
 
-          <h4>Sass</h4>
-          <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
+      <div class="container">
+        <div class="row">
+          <h3>Europe Code Week 2014 in Gießen</h3>
+          <p class="col-lg-6">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.</p>
 
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
+          <p class="col-lg-6">Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec id elit non mi porta gravida at eget metus.</p>
         </div>
       </div>
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      <div class="container">
+        <div id="themen">
+          <h3>Themen</h3>
+
+          <div class="row">
+            <h4>Open Data</h4>
+            <div class="col-lg-6">
+              <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+            </div>
+
+            <div class="col-lg-6">
+              <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <h4>Dataviz</h4>
+            <div class="col-lg-6">
+              <p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod.</p>
+              <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui.</p>
+            </div>
+
+            <div class="col-lg-6">
+              <img src="images/dataviz.png">
+            </div>
+          </div>
+
+          <div class="row">
+            <h4>Code for Gießen</h4>
+            <div class="col-lg-6">
+              <p>Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+
+            <div class="col-lg-6">
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="container">
+        <div class="row" id="schedule">
+          <h3>Schedule</h3>
+          <h4>Montag, 11. Oktober</h4>
+
+          <div class="col-lg-6">
+            <ul>
+              <li>
+                <time datetime="15:00">15:00</time>
+                <div class="schedule-event">
+                  <h6>Get together</h6>
+                  <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+              </li>
+              <li>
+                <time datetime="15:15">15:15</time>
+                <div class="schedule-event">
+                  <h6>Einführung</h6>
+                  <p>Curabitur blandit tempus porttitor.</p>
+                </div>
+              </li>
+              <li>
+                <div class="schedule-event">
+                  <h6>Päuschen</h6>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6">
+            <ul>
+              <li>
+                <time datetime="16:00">16:00</time>
+                <div class="schedule-event">
+                  <h6>Gruppen</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </li>
+              <li>
+                <time datetime="17:00">17:00</time>
+                <div class="schedule-event">
+                  <h6>Präsentationen</h6>
+                  <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </li>
+              <li>
+                <time datetime="19:00">19:00</time>
+                <div class="schedule-event">
+                  <h6>Kneipentour</h6>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <br class="clearfix">
+
+      <div class="panel" id="signup">
+        <div class="container">
+          <h4>Melde dich jetzt unverbindlich an und sei dabei!</h4>
+
+          <form action="" method="get" accept-charset="utf-8" role="form" class="form-inline">
+            <div class="row">
+
+              <div class="form-group">
+                <input type="text" class="form-control" id="signup-name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="signup-mail" placeholder="Mail">
+              </div>
+
+              <div class="form-group">
+                <select class="selectpicker">
+                  <option value="">Coder</option>
+                  <option value="">Designer</option>
+                  <option value="">Journalist</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+               <button type="submit" class="btn btn-default">Anmelden</button>
+             </div>
+
+           </div><!-- row fin -->
+         </form>
+       </div><!-- container fin -->
+     </div><!-- panel fin -->
+
+      <div class="container">
+        <div class="row">
+          <h3>Datenschutz</h3>
+          <p>Wir behandeln deine Daten natürlich streng vertraulich und auschließlich für eventuelle Benachrichtigungen bzw. damit wir dich erreichen können falls was sein sollte. Du erhälst keinen Newsletter oder ähnliches. Nach dem Event löschen wir alles.</p>
+        </div>
+      </div>
+
+      <div class="sponsors">
+        <ul>
+          <li><img src="images/CFG_logo.svg"></li>
+          <li><img src="images/codeweek-badge-small-250.png"></li>
+          <li><img src="images/cfgi-black.svg"></li>
+        </ul>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        </div>
+      </footer>
 
     </div>
 
@@ -81,21 +228,15 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/jquery-migrate/jquery-migrate.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    <script src="bower_components/jquery.scrollorama/js/jquery.scrollorama.js"></script>
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-</body>
-</html>
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+  </html>
