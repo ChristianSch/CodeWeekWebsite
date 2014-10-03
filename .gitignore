@@ -3,5 +3,5 @@ dist
 .tmp
 .sass-cache
 bower_components
-npb-debug.log
+npm-debug.log
 .DS_Store
