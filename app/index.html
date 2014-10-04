@@ -43,7 +43,7 @@
 
             <div class="row">
               <ul class="btn-list">
-              <li><a href="#singup" class="btn btn-lg btn-outline btn-outline-white">Anmelden</a></li>
+                <li><a class="btn btn-lg btn-outline btn-outline-white" data-toggle="modal" data-target="#signupModal">Anmelden</a></li>
                 <li><a href="#schedule" class="btn btn-lg btn-outline btn-outline-white">Schedule</a></li>
               </ul>
             </div>
@@ -160,41 +160,64 @@
 
       <div class="panel" id="signup">
         <div class="container">
-          <h4>Melde dich jetzt unverbindlich an und sei dabei!</h4>
+          <div class="centered">
+            <h4>Melde dich jetzt unverbindlich an und sei dabei!</h4>
+            <a class="btn btn-lg btn-outline btn-outline-white" data-toggle="modal" data-target="#signupModal">Anmelden</a>
 
-          <form action="" method="get" accept-charset="utf-8" role="form" class="form-inline">
-            <div class="row">
+            <noscript>
+              <div class="row">
+                <div class="alert alert-danger" role="alert">
+                  Zur Anmeldung wird JavaScript benötigt!
+                </div><!-- .alert fin -->
+              </div><!-- .row fin -->
+            </noscript>
+          </div>
 
-              <div class="form-group">
-                <input type="text" class="form-control" id="signup-name" placeholder="Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="signup-mail" placeholder="Mail">
-              </div>
+          <!-- sign up modal -->
+          <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
 
-              <div class="form-group">
-                <select class="selectpicker">
-                  <option value="">Coder</option>
-                  <option value="">Designer</option>
-                  <option value="">Journalist</option>
-                </select>
-              </div>
+                <div class="modal-header">
+                  <a class="close" data-dismiss="modal">×</a>
+                  <h4 class="modal-title">Jetzt unverbindlich anmelden<h4>
+                </div><!-- .modal-header fin -->
 
-              <div class="form-group">
-               <button type="submit" class="btn btn-default">Anmelden</button>
-             </div>
+                <div class="modal-body" id="modalBody">
+                  <h5><a data-toggle="collapse" data-target="#privacy">Datenschutz <i class="indicator glyphicon glyphicon-chevron-down"></i></a></h5>
+                  <p id="privacy" class="collapse">Wir behandeln deine Daten natürlich streng vertraulich und auschließlich für eventuelle Benachrichtigungen bzw. damit wir dich erreichen können falls was sein sollte. Du erhälst keinen Newsletter oder ähnliches. Nach dem Event löschen wir alles.</p>
 
-           </div><!-- row fin -->
-         </form>
-       </div><!-- container fin -->
-     </div><!-- panel fin -->
+                  <hr>
 
-      <div class="container">
-        <div class="row">
-          <h3>Datenschutz</h3>
-          <p>Wir behandeln deine Daten natürlich streng vertraulich und auschließlich für eventuelle Benachrichtigungen bzw. damit wir dich erreichen können falls was sein sollte. Du erhälst keinen Newsletter oder ähnliches. Nach dem Event löschen wir alles.</p>
-        </div>
-      </div>
+                  <form accept-charset="utf-8" role="form" class="form signup">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="signup-name" placeholder="Name">
+                    </div>
+
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="signup-mail" placeholder="Mail">
+                    </div>
+
+                    <div class="form-group">
+                      <select class="selectpicker" id="signup-role">
+                        <option value="">Coder</option>
+                        <option value="">Designer</option>
+                        <option value="">Journalist</option>
+                      </select>
+                    </div>
+                 </form>
+               </div><!-- .modal-body fin -->
+
+              <div class="modal-footer" id="modalFooter">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Abbrechen</button>
+                <button type="button" class="btn btn-primary" id="signupButton">Unverbindlich anmelden</button>
+              </div><!-- .modal-footer fin -->
+
+              </div><!-- modal-content fin -->
+            </div><!-- modal-dialog fin -->
+          </div><!-- #signupModal fin -->
+        </div><!-- container fin -->
+      </div><!-- panel fin -->
 
       <div class="sponsors">
         <ul>
